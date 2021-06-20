@@ -227,7 +227,7 @@ body {
 
 /*future stars section*/
 .future-stars {
-  width: 100vw;
+  width: 110vw;
   height: 60vh;
 }
 
@@ -266,7 +266,7 @@ body {
 /*streamed mateches*/
 .streamed-matches {
   width: 100vw;
-  height: 160vh;
+  height: 170vh;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (3fr)[1];
