@@ -196,7 +196,7 @@ span {
 
 /*about me section*/
 .about {
-  height: 100vh;
+  height: 110vh;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (2fr)[1];
@@ -218,7 +218,7 @@ span {
 
 /*portfolio section*/
 .portfolio {
-  height: 150vh;
+  height: 160vh;
 }
 
 .portfolio .portfolio-content {
