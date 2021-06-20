@@ -1,0 +1,469 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: url(/images/pexels-hasan-albari.jpg) no-repeat center/cover;
+  background-attachment: fixed;
+  background-color: #202020;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #E5E5E5;
+  letter-spacing: 1px;
+}
+
+.container {
+  max-width: 1300px;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #E5E5E5;
+}
+
+h2 {
+  font-family: "Big Shoulders Display", cursive;
+  padding-bottom: 1rem;
+  color: #73DF78;
+}
+
+span {
+  -webkit-animation: pulse 9s ease-in-out;
+          animation: pulse 9s ease-in-out;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    color: #0B6CFE;
+  }
+  20% {
+    color: #f06e6e;
+  }
+  40% {
+    color: #692727;
+  }
+  60% {
+    color: #0c0202;
+  }
+  80% {
+    color: #1a1958;
+  }
+  90% {
+    color: #3e35b8;
+  }
+  100% {
+    color: #0B6CFE;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    color: #0B6CFE;
+  }
+  20% {
+    color: #f06e6e;
+  }
+  40% {
+    color: #692727;
+  }
+  60% {
+    color: #0c0202;
+  }
+  80% {
+    color: #1a1958;
+  }
+  90% {
+    color: #3e35b8;
+  }
+  100% {
+    color: #0B6CFE;
+  }
+}
+
+.nav-bar {
+  width: 100vw;
+  height: 10vh;
+}
+
+.nav-bar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.nav-bar ul li {
+  list-style: none;
+  padding: 0.5rem;
+}
+
+.nav-bar ul li a {
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.nav-bar ul li a:hover {
+  border-bottom: 1px solid #73DF78;
+}
+
+/*hero-section*/
+.hero {
+  width: 100vw;
+  height: 60vh;
+}
+
+.hero .hero-content {
+  padding: 1rem 0;
+  width: 100%;
+  text-align: center;
+  color: whitesmoke;
+  font-size: 2.5rem;
+  font-family: "Big Shoulders Display", cursive;
+}
+
+.hero .hero-content span {
+  color: #0B6CFE;
+  font-family: "Montez", cursive;
+}
+
+.hero .hero-content h3 {
+  font-size: 18px;
+}
+
+.hero .icon-scroll,
+.hero .icon-scroll:before {
+  position: absolute;
+  left: 50%;
+}
+
+.hero .icon-scroll {
+  width: 40px;
+  height: 70px;
+  margin-left: -20px;
+  top: 50%;
+  margin-top: 8rem;
+  -webkit-box-shadow: inset 0 0 0 1px #73DF78;
+          box-shadow: inset 0 0 0 1px #73DF78;
+  border-radius: 25px;
+}
+
+.hero .icon-scroll:before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  margin-left: -4px;
+  top: 8px;
+  border-radius: 4px;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-name: scroll;
+          animation-name: scroll;
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(46px);
+            transform: translateY(46px);
+  }
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(46px);
+            transform: translateY(46px);
+  }
+}
+
+/*about me section*/
+.about {
+  height: 80vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (2fr)[1];
+      grid-template-columns: repeat(1, 2fr);
+}
+
+.about .about-content {
+  padding: 0.8rem;
+}
+
+.about .about-content-image img {
+  width: 200px;
+  padding: 1rem;
+}
+
+.about .about-content h4 {
+  padding-top: 0.5rem;
+}
+
+/*portfolio section*/
+.portfolio {
+  height: 150vh;
+}
+
+.portfolio .portfolio-content {
+  padding: 0.8rem;
+}
+
+.portfolio .portfolio-projects {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (6fr)[1];
+      grid-template-columns: repeat(1, 6fr);
+}
+
+.portfolio .projects img {
+  width: 100%;
+}
+
+.portfolio .projects p {
+  border: 1px solid #535353;
+  padding: 0.5rem;
+}
+
+/*contact section*/
+.contact {
+  height: 100vh;
+  margin-top: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (2fr)[1];
+      grid-template-columns: repeat(1, 2fr);
+}
+
+.contact .contact-info {
+  text-align: left;
+  padding: 0.8rem;
+  color: #E5E5E5;
+}
+
+.contact .contact-info li {
+  list-style: none;
+  padding-top: 0.5rem;
+}
+
+.contact .contact-form {
+  width: 100%;
+  height: 80%;
+  padding: 1rem;
+}
+
+.contact .contact-form .form-input {
+  width: 100%;
+}
+
+.contact .contact-form .form-content {
+  width: 100%;
+}
+
+.contact .contact-form button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  color: #E5E5E5;
+  background-color: #0B6CFE;
+  outline: none;
+  border: none;
+  padding: 0.1rem 1rem;
+}
+
+.contact .contact-form label {
+  color: #E5E5E5;
+}
+
+/*footer*/
+.footer-content {
+  width: 100%;
+  height: 10vh;
+  background-color: #2D2F3F;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.footer-content .footer-nav {
+  width: 100%;
+  height: 10vh;
+}
+
+.footer-content .footer-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.footer-content .footer-nav ul li {
+  list-style: none;
+  padding: 0.5rem;
+}
+
+.footer-content .footer-nav ul li a {
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.footer-content .footer-nav ul li a:hover {
+  border-bottom: 1px solid #73DF78;
+}
+
+.footer-content .icons {
+  width: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-right: 2rem;
+}
+
+.footer-content .icons a {
+  padding: 1rem;
+}
+
+/*media*/
+@media (min-width: 600px) {
+  .about {
+    height: 60vh;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .about-content-image img {
+    margin-top: 3rem;
+  }
+  .portfolio {
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+  }
+  .portfolio .portfolio-content {
+    padding-bottom: 5rem;
+    width: 70%;
+  }
+  .portfolio .portfolio-projects {
+    row-gap: 20px;
+  }
+  .portfolio .portfolio-projects .projects {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .portfolio .portfolio-projects .projects:nth-child(odd) p {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .portfolio .projects img {
+    max-width: 400px;
+  }
+  .portfolio .projects p {
+    margin-top: 20px;
+    width: 500px;
+    height: 110px;
+    padding: 0.5rem;
+  }
+}
+
+@media (min-width: 700px) {
+  .portfolio {
+    height: 120vh;
+  }
+}
+
+@media (min-width: 900px) {
+  body {
+    font-size: 18px;
+  }
+  .nav-bar {
+    max-width: 50%;
+    margin-left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .hero .hero-content {
+    font-size: 3rem;
+  }
+  .hero .hero-content h3 {
+    font-size: 20px;
+  }
+  .about {
+    max-width: 1100px;
+    width: 80vw;
+    margin: auto;
+  }
+  .portfolio {
+    max-width: 1200px;
+    width: 80vw;
+    margin: auto;
+  }
+  .contact {
+    height: 50vh;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    padding: 1rem;
+    margin: auto;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .portfolio {
+    place-content: center;
+  }
+  .contact {
+    height: 60vh;
+    max-width: 1200px;
+    margin-top: 100px;
+  }
+}
+
+@media (min-width: 1300px) {
+  body {
+    font-size: 20px;
+  }
+  .hero .hero-content {
+    font-size: 3.5rem;
+  }
+  .portfolio {
+    height: 100vh;
+  }
+}
+
+@media (min-width: 1500px) {
+  .hero .hero-content {
+    font-size: 4.5rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,39 @@
+/*set up button classes and also set up main container class*/
+$primary-color:#F1FAEE;
+$secondary-color:#EF233C;
+$tertiary-color:#EDF2F4;
+$font-family:'Big Shoulders Display', cursive;
+
+.primary-btn{
+    background-color: rgba(0, 0, 0, 0.5);
+    outline: none;
+    border-color: $secondary-color;
+    color:$primary-color;
+    padding:5px 20px;
+    cursor: pointer;
+    font-family: $font-family;
+    letter-spacing: 1.2px;
+    
+}
+
+.secondary-btn{
+    background-color: $secondary-color;
+    color: $primary-color;
+    outline: none;
+    border:1px solid $secondary-color;
+    cursor: pointer;
+    padding:5px 20px;
+    font-family: $font-family;
+    font-size:16px;
+    letter-spacing: 1px;
+    
+}
+    
+.primary-btn:hover{
+    border-color: $primary-color;
+    color:$secondary-color;
+}
+.secondary-btn:hover{
+    background-color: $tertiary-color;
+    color:$secondary-color;
+}

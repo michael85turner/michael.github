@@ -1,0 +1,304 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+body{
+    font-size: 10px;
+    font-family: 'Libre Baskerville', serif;
+}
+a{
+    text-decoration: none;
+    color: white;
+
+}
+.destination h2, .explorers h2, .testimonials h2, .contact h2{
+    padding:0.5rem;
+}
+/*landing page section*/
+.nav-section{
+    width:100vw;
+    height:9vh;
+    margin: 0 auto;
+    background-color: #212121;
+    display:flex;
+    justify-content: space-around;
+}
+nav ul{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 280px;
+    margin-top: 20px;
+}
+nav li{
+    list-style: none;
+}
+.nav li, a:hover{
+    color:#64a1f1;
+}
+.logo{
+    font-size: 10px;
+    margin-top: 15px;
+    color: #ffff;
+    letter-spacing: 3px;
+}
+.landing{
+    width:100vw;
+    height:60vh;
+    background: url(../images/landing-image.jpg) no-repeat center/cover;
+    background-attachment: fixed;
+}
+
+.landing-content{
+    display:grid;
+    place-content: center;
+    width:75vw;
+    height:40vh;
+    margin-left:50%;
+    transform: translateX(-50%);
+}
+.landing h1{
+    color: #ffff;
+    font-size: 2rem;
+    text-align: center;
+}
+.landing h3{
+    color:#ffff;
+    text-align: center;
+    font-size: 0.8rem;
+    padding-bottom: 2rem;
+}
+.btn{
+    background-color: #2F80ED;
+    color:#ffff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+    width:100px;
+    padding: 7px 0;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+.btn:hover{
+    box-shadow: rgb(92, 194, 241) 1px 1px 10px 1px;
+}
+
+/*expplorers life style section*/
+.explorers{
+    width:100vw;
+    height: 110vh;
+}
+.explorers-content{
+    display:grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+.explorers-content p{
+    font-size: 0.7rem;
+    padding: 0.4rem;
+}
+.explorers-content a{
+    color: #2F80ED;
+    margin-left:10px;
+    padding-bottom:0.2rem;
+}
+.explorers-content a:hover{
+    color:blue;
+}
+.ex-images{
+    width:100%;
+    height:10rem;
+    object-fit: cover;
+}
+/*destination section*/
+.destination{
+    width:100vw;
+    height:95vh;
+}
+.destination h2{
+    padding:0.5rem;
+}
+.destination-content{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.des-images{
+    width:100%;
+    height:10rem;
+    object-fit: cover;
+}
+.destination-content a{
+    color: #2F80ED;
+    margin-left:10px;
+    padding-bottom:0.2rem;
+}
+.destination-content a:hover{
+    color:blue;
+}
+.destination-content p{
+    font-size: 0.7rem;
+    padding: 0.4rem;
+}
+/*testimonials section*/
+.testimonials{
+width:100vw;
+height: 60vh;
+background-color: rgb(243, 243, 243);
+}
+.testimonials-content{
+display:grid;
+grid-template-columns: repeat(1, 1fr);
+padding:1rem;
+}
+.testimonials-content p{
+    font-size: 0.7rem;
+    padding: 0.4rem;
+}
+.testimonials-content h3,h4{
+    padding-left: 0.5rem;
+}
+/*contact section*/
+.contact{
+    width:100vw;
+    height:50vh;
+}
+.contact-form{
+    width:80%;
+    height:100%;
+    padding:1.5rem;
+    margin: 0 auto;
+}
+.contact-form h1{
+  text-align: center;
+  padding:0.5rem;
+}
+.form-input{
+    display:block;
+    width:100%;
+    cursor: pointer;
+    outline: none;
+    padding:0.2rem;
+}
+.contact-form label{
+    font-size: 0.8rem;
+}
+.contact-form,.btn{
+    margin-top:10px;
+}
+/*footer-section*/
+.footer-container{
+    background-color: #212121;
+    width:100vw;
+    height:23vh;
+    color:#2F80ED;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding:1rem;
+}
+.footer-container li{
+    list-style: none;
+    cursor: pointer;
+}
+.social-icons img{
+    width:2rem;
+}
+
+@media (min-width: 600px){
+    body{
+        font-size: 12px;
+    }
+    .explorers{
+        height: 95vh;
+    }
+    .destination{
+        height:80vh;
+    }
+}
+@media (min-width: 750px){
+    .testimonials-content p, .destination-content p, .explorers-content p{
+        font-size: 0.9rem;
+    }
+    .contact-form{
+        width:70%;
+    }
+}
+@media (min-width: 900px){
+    body{
+        font-size: 16px;
+    }
+    nav ul{
+        width:370px;
+    }
+    .landing h1{
+        font-size: 2.2rem;
+    }
+    .explorers{
+        height:50vh;
+    }
+    .explorers-content{
+        grid-template-columns: repeat(3, 1fr);
+        padding:0.2rem;
+        grid-gap:10px;
+    }
+    .contact-form{
+        width:60%;
+    }
+    .destination-content{
+        grid-gap: 10px;
+        padding:0.2rem;
+    }
+    .footer-container{
+        padding:3rem;
+    }
+    .testimonials-content{
+        grid-gap: 10px;
+    }
+}
+@media (min-width: 1100px){
+    .destination, .explorers, .testimonials, .contact{
+        width:95vw;
+        margin: 0 auto;
+    }
+    .destination{
+        height:50vh;
+    }
+    .destination-content{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .contact-form{
+        width:50%;
+    }
+    .testimonials-content p{
+        width:80%;
+    }
+    nav ul{
+        width: 470px;
+    }
+    .landing h1{
+        font-size: 2.7rem;
+    }
+    
+    .footer-container{
+        height:30vh;
+        padding: 5rem;
+    }
+}
+
+@media (min-width: 1300px){
+    .destination, .explorers, .testimonials, .contact{
+        width:85vw;
+        margin: 0 auto;
+    }
+    .explorers{
+        height:50vh;
+}
+.destination{
+    height:60vh;
+}
+.contact{
+    height:60vh;
+}
+}

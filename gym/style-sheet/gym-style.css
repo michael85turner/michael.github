@@ -1,0 +1,449 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+a{
+    text-decoration: none;
+    color:#ffff;
+}
+a:hover{
+    color:#EA2649;
+}
+.main-container{
+    width:100vw;
+    height:100%;
+}
+
+/*nav section*/
+header{
+    width:100vw;
+    height:10vh;
+    background-color: rgb(27, 27, 27);
+    position: fixed;
+}
+.logo{
+    color:#ffff;
+    font-size: 10px;
+    padding:0.5rem;
+    width:90px;
+}
+ul{
+    display:flex;
+    width:350px; 
+    margin: 0 auto;
+    
+}
+ul li{
+    padding:0.5rem;
+    font-size: 14px;
+    list-style: none;
+    cursor: pointer;
+}
+/*landing section*/
+.landing-page{
+    width:100vw;
+    height: 60vh;
+    background: url(../images/landing-image.jpg) no-repeat center/cover;
+    background-attachment: fixed;
+}
+.landing-page-content{
+    display:grid;
+    place-content: center;
+    color: #ffff;
+    padding-top:10rem;
+}
+.landing-page-content h1, H5{
+    text-transform: uppercase;
+    text-align: center;
+    padding:0.5rem;
+}
+.button-container{
+    display:flex;
+    justify-content: space-around;
+    width:200px;
+    margin-left: 20%;
+}
+.join-btn{
+    background-color: #EA2649;
+    color: #ffff;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    padding:5px 10px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.more-btn{
+    background-color: rgba(20, 20, 20,0);
+    color: #fff;
+    border-radius: 20px;
+    outline: none;
+    border: 1px solid #EA2649;
+    padding:5px 10px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.more-btn:hover{
+    background-color: #EA2649;
+}
+.join-btn:hover{
+    background-color:  rgba(20, 20, 20,0);
+    border: 1px solid #EA2649;
+}
+/*content section*/
+.banner{
+    width:100vw;
+    height:45px;
+    text-align:center;
+    padding:0.2rem;
+    background-color: #efefef;
+}
+.join-section{
+    width:100vw;
+    height:100vh;
+    background: url(../images/section-image2.jpg) no-repeat center/cover;
+    background-attachment: fixed;
+    color:#ffff;
+    text-shadow: black 1px 1px 1px;
+    font-size: 14px;;
+}
+.join-section h2, .event1 h2{
+padding:1rem;
+width:300px;
+font-size: 18px;
+}
+.join-content{
+    display:grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 10px;;
+    padding: 1rem;
+    width:90vw;
+}
+.learn-more{
+    background-color: #EA2649;
+    color: #ffff;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    padding:5px 10px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+.learn-more:hover{
+    color:rgb(26, 26, 26);
+}
+/*advert section*/
+.advert{
+    width:100vw;
+    height:110vh;
+    padding-top: 90px;
+    background: url(../images/section-image1.jpg) no-repeat center/cover;
+    background-attachment: fixed;
+
+}
+.advert-section{
+    display:grid;
+    grid-template-columns: repeat(1, 2fr);
+}
+.advert-content{
+    text-align: center;
+    font-size: 14px;
+    color:#ffff;
+    width:350px;
+    padding:0.5rem;
+    margin: 0 auto;
+    border: 1px solid #EA2649;
+}
+.membership-content{
+    text-align:center;
+}
+.membership-content h2{
+    text-align:center;
+    font-size:18px;
+    padding: 1rem;
+    color:#ffff;
+}
+.membership-card1{
+    background-color: rgb(255, 255, 255);
+    border:1px solid #EA2649;
+    width:300px;
+    height:55vh;
+    margin: 0 auto;
+}
+.membership-card1 img{
+    width: 198px;
+    height:200px;
+    object-fit: cover;
+}
+.membership-card1 ul{
+    display:flex;
+    flex-direction: column;
+    justify-content: left;
+}
+.membership-card1 li{
+    text-align: left;
+}
+.gg-check {
+    box-sizing: border-box;
+    position: relative;
+    padding-right:0.9rem;
+    transform: scale(var(--ggs,1));
+    width: 22px;
+    height: 22px;
+    border: 2px solid transparent;
+    border-radius: 100px
+}
+.gg-check::after {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    left: 3px;
+    top: -1px;
+    width: 6px;
+    height: 10px;
+    border-width: 0 2px 2px 0;
+    border-style: solid;
+    transform-origin: bottom left;
+    transform: rotate(45deg)
+}
+/*event sections*/
+.event1{
+    width:100vw;
+    height:70vh;
+    background: url(../images/section-image4.jpg) no-repeat center/cover;
+    background-attachment: fixed;
+    color:#ffff;
+}
+.strength-content{
+    display: grid;
+    grid-template-columns:repeat(1, 1fr) ;
+    padding: 1rem;
+    width:90vw;
+    row-gap: 10px;
+}
+.event2{
+    width:100vw;
+    height:60vh;
+    padding-top: 90px;
+    background: url(../images/section-image3.jpg) no-repeat center/cover;
+    background-attachment: fixed;
+}
+.event2-content{
+    text-align: center;
+    font-size: 14px;
+    color:#ffff;
+    width:90%;
+    padding:0.5rem;
+    margin: 0 auto;
+    border: 1px solid #EA2649;
+}
+/*thumbnail-section*/
+.thumbnail{
+width:100vw;
+height:120vh;
+background-color:#efefef;
+}
+.thumbnail-content{
+    text-align:center;
+    padding:1rem;
+}
+.thumbnail-content h3{
+    font-size:1rem;
+    padding-bottom: 10px;
+}
+.thumbnail-img{
+    width: 200px;
+    height:150px;
+    object-fit: cover; 
+    margin: 0 auto;
+}
+.thumbnail-images{
+    display:grid;
+    grid-template-columns: repeat(2, 2fr);
+    row-gap: 5px;
+}
+
+
+/*footer*/
+footer{
+    width:100vw;
+    height:10vh;
+    background-color: rgb(27, 27, 27);
+}
+.footer-content{
+    display:flex;
+    justify-content: space-around;
+    align-content: center;
+   
+}
+.footer-content ul{
+    width:100%;
+    margin:0 auto;
+    padding:1rem;
+}
+.footer-content li{
+    color:#ffff;
+    font-size: 10px;
+}
+
+/*media query*/
+@media (min-width: 600px){
+    .logo{
+        margin-left:1rem;
+    }
+    ul{
+       justify-content: space-around;
+    }
+    .thumbnail-img{
+        width: 250px;
+        height:180px;
+    }
+}
+
+@media  (min-width: 700px) {
+    body{
+        font-size: 18px;;
+    }
+}
+@media (min-width:900px){
+    ul li{
+        font-size:16px;
+    }
+    header{
+        height:8vh;
+    }
+    .landing-page{
+        height:70vh;
+    }
+    .landing-page-content h1{
+        font-size: 2.5rem;;
+    }
+    .button-container{
+        width:250px;
+    }
+    .join-btn, .more-btn{
+        font-size:18px;
+        padding:8px 15px;
+    }
+    .join-section h2, .event1 h2{
+        font-size: 1.5rem;
+        margin-left: 3rem;
+    }
+    .join-content{
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 50px;
+        padding: 1.2rem;
+        margin:0 auto;
+    }
+    .advert-section{
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 auto;
+    }
+    .advert-content{
+        font-size: 16px;
+        height:200px;
+        margin-top: 3.6rem;
+    }
+    .membership-card1{
+        width:400px;
+        height:60vh;
+    }
+    .membership-card1 img{
+        width: 250px;
+        height:250px;
+    }
+    .strength-content{
+        margin-left:3rem;
+    }
+    .event2-content{
+        width:80vw;
+        font-size: 16px;
+    }
+    .thumbnail{
+        height:110vh;
+    }
+   
+    .thumbnail-img{
+        width: 200px;
+        height:220px;
+        margin: 30px auto;
+    }
+    .thumbnail-images{
+        display:grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding:3rem;
+    }
+    .thumbnail-content{
+        width:60vw;
+        margin: auto;
+    }
+    .footer-content li{
+        font-size: 12px;;
+    }
+        
+}
+
+@media (min-width: 1100px){
+    header ul{
+        width:500px;
+    }
+    .landing-page{
+        height:80vh;
+    }
+    .landing-page-content{
+        padding-top:15rem;
+        text-align: center;
+    }
+    .landing-page-content h1{
+        font-size: 4rem;
+    }
+    .landing-page-content h3{
+        font-size: 2rem;
+    }
+    .button-container{
+        margin-left: 30%;
+    }
+    .join-content{
+        font-size: 18px;
+    }
+    .advert-content{
+        font-size: 18px;
+        height:250px;
+    }
+    .learn-more{
+        font-size: 16px;
+    }
+    .strength-content{
+        width: 80vw;
+    }
+    .event2-content{
+        width:70vw;
+        font-size: 18px;
+    }
+    .banner{
+        font-size: 20px;;
+    }
+    .thumbnail-img{
+        width: 230px;
+        height:250px;
+        margin: 30px auto;
+    }
+}
+@media(min-width:1300px){
+    header{
+        height:12vh;
+    }
+      .membership-card1{
+        height:66vh;
+    }
+   .thumbnail{
+        height:130vh;
+    }
+}
